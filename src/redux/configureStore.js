@@ -8,10 +8,7 @@ const env = process.env.NODE_ENV;
 
 const reducer = combineReducers({ pingpong });
 
-const epics = combineEpics(
-  pingpong_epics.counterEpic,
-  pingpong_epics.counterEpic2
-);
+const epics = combineEpics(...pingpong_epics);
 
 const epicMiddleware = createEpicMiddleware();
 

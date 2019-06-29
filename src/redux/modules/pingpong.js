@@ -69,10 +69,7 @@ const actionCreators = {
   updateCounter
 };
 
-const epics = {
-  counterEpic,
-  counterEpic2
-};
+const epics = [counterEpic, counterEpic2];
 
 export { actionCreators };
 export { epics };
